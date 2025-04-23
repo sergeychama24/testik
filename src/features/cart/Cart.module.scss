@@ -1,13 +1,32 @@
 .cart {
+  padding-block: 1rem;
+  padding-inline: 2rem;
   position: fixed;
-  width: 300px;
+  width: 600px;
   height: 100vh;
   top: 0;
-  right: -300px;
+  right: -600px;
   transition: right 0.3s;
-  background: pink;
+  background: #181818;
 }
 
 .cart.active {
   right: 0;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
