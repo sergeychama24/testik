@@ -1,0 +1,16 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination div {
+  display: flex;
+  gap: 0.8rem;
+}
