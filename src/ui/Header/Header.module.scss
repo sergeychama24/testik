@@ -1,0 +1,40 @@
+@use '../../styles/variables/colors' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background-color: #000;
+  color: white;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.links > li {
+  cursor: pointer;
+}
+
+.links > li:hover {
+  color: $primary-color;
+  transition: color 0.3s;
+}
+
+.cart {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.cart:hover {
+  color: $primary-color;
+}

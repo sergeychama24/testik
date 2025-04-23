@@ -1,14 +1,14 @@
-import styles from "./AppLayout.module.scss";
 import { Outlet } from "react-router";
+import { Header } from "../Header/Header.tsx";
 
-type Props = {};
+import styles from "./AppLayout.module.scss";
 
 // TODO: Make Header Footer components
 
-export function AppLayout({}: Props) {
+export function AppLayout() {
   return (
     <>
-      <header>HEADER</header>
+      <Header />
       <main>
         <Outlet />
       </main>
