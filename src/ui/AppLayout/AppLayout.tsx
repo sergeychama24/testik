@@ -9,7 +9,7 @@ export function AppLayout() {
   return (
     <>
       <Header />
-      <main>
+      <main className={styles.main}>
         <Outlet />
       </main>
       <footer>FOOTER</footer>
