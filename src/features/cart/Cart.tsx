@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
 import styles from "./Cart.module.scss";
-import cover from "../../../public/cover.webp";
 import { CartItem } from "./cartItem/CartItem.tsx";
 import { Button } from "../../ui/Button/Button.tsx";
 
@@ -9,7 +8,6 @@ const cartItems = [
   {
     id: 122,
     name: "Наруто: Ураганные хроники ультимативный ниндзя 10 Конекшен",
-    image: cover,
     qty: 2,
     price: 1500,
     type: "tech",
@@ -17,7 +15,6 @@ const cartItems = [
   {
     id: 228,
     name: "Чипы Lays",
-    image: cover,
     qty: 1,
     price: 132,
     type: "food",
@@ -25,7 +22,6 @@ const cartItems = [
   {
     id: 322,
     name: "iPhone 16 Pro Max Ultra Super Mega Alpha",
-    image: cover,
     qty: 2,
     price: 14999,
     type: "tech",
