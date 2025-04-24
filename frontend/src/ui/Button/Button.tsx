@@ -7,12 +7,14 @@ type ButtonProps = {
   children: ReactNode;
   type?: "primary" | "secondary";
   size?: "small" | "medium" | "large";
+  onClick?: () => void;
 };
 
 export function Button({
   children,
   type = "primary",
   size = "small",
+  onClick,
 }: ButtonProps) {
   const classes = clsx(
     styles.btn,
@@ -20,5 +22,5 @@ export function Button({
     styles[`btn--type-${type}`],
   );
 
-  return <button className={classes}>{children}</button>;
+  return <button onClick={onClick} className={classes}>{children}</button>;
 }

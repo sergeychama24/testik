@@ -1,7 +1,7 @@
 type ProductType = "food" | "tech" | "clothes";
 
 export type Product = {
-  id: number;
+  id: string;
   sale?: number;
   name: string;
   qty: number;
@@ -9,3 +9,5 @@ export type Product = {
   type: ProductType;
   image: string;
 };
+
+export type ProductInCart = Omit<Product, 'image' | 'type'>

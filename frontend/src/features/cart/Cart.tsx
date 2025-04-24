@@ -1,8 +1,8 @@
+import { CartItem } from "./cartItem/CartItem.tsx";
+import { Button } from "../../ui/Button/Button.tsx";
 import clsx from "clsx";
 
 import styles from "./Cart.module.scss";
-import { CartItem } from "./cartItem/CartItem.tsx";
-import { Button } from "../../ui/Button/Button.tsx";
 
 const cartItems = [
   {

@@ -1,10 +1,12 @@
 import { Button } from "../../../ui/Button/Button.tsx";
 import styles from "./ProductCard.module.scss";
 
-import { Product } from "../../../types";
 import clsx from "clsx";
+import { Product } from "../../../types";
+import { useAppDispatch } from "../../../app/hooks.ts";
+import { addToCart } from "../../cart/cartSlice.ts";
 
-type ProductCardProps = Omit<Product, "id">;
+type ProductCardProps = Product;
 
 export function ProductCard({
   name,
@@ -12,7 +14,10 @@ export function ProductCard({
   image,
   price,
   sale,
+  id
 }: ProductCardProps) {
+  const dispatch = useAppDispatch()
+
   return (
     <div className={styles.card}>
       <div className={styles.cover}>
@@ -36,7 +41,8 @@ export function ProductCard({
           </span>
         </div>
         <div>
-          <Button>В корзину</Button>
+          <Button onClick={() => dispatch(addToCart({
+            name, id, qty, price, sale}))}>В корзину</Button>
         </div>
       </div>
     </div>
