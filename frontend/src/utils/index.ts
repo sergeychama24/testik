@@ -1,3 +1,5 @@
+import { ProductInCart } from "../types";
+
 export function formatProductType(type: string) {
   const types = new Map([
     ["tech", "Электроника"],
@@ -6,4 +8,8 @@ export function formatProductType(type: string) {
   ]);
 
   return types.get(type);
+}
+
+export function checkHasInCart(cart: ProductInCart[], productId: string): boolean{
+  return cart.some((item) => item.id === productId)
 }

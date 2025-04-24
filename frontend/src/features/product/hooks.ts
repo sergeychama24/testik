@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllProducts } from "../../services/products.ts";
+import { getAllProducts } from "../../services/productsApi.ts";
 import { ProductResponse, ProductType } from "../../types";
 
 export function useGetAllProducts(type: ProductType, page: number){
@@ -13,7 +13,7 @@ export function useGetAllProducts(type: ProductType, page: number){
     res.then(products => setData(products))
     res.catch(error => setError(error.message))
     res.finally(() => setIsLoading(false));
-  }, []);
+  }, [page]);
 
   return { result: data, isLoading, error }
 }

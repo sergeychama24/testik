@@ -3,8 +3,9 @@ import styles from "./ProductCard.module.scss";
 
 import clsx from "clsx";
 import { Product } from "../../../types";
-import { useAppDispatch } from "../../../app/hooks.ts";
+import { useAppDispatch, useAppSelector } from "../../../app/hooks.ts";
 import { addToCart } from "../../cart/cartSlice.ts";
+import { checkHasInCart } from "../../../utils";
 
 type ProductCardProps = Product;
 
@@ -16,7 +17,13 @@ export function ProductCard({
   sale,
   id
 }: ProductCardProps) {
+  const cart = useAppSelector(state => state.cart)
   const dispatch = useAppDispatch()
+
+  function addToCartHandler(){
+    dispatch(addToCart({
+      name, id, qty, price, sale}))
+  }
 
   return (
     <div className={styles.card}>
@@ -41,10 +48,13 @@ export function ProductCard({
           </span>
         </div>
         <div>
-          <Button onClick={() => dispatch(addToCart({
-            name, id, qty, price, sale}))}>В корзину</Button>
+          {checkHasInCart(cart.items, id)
+            ? (<Button>Уже в корзине</Button>)
+            : <Button onClick={addToCartHandler}>В корзину</Button>
+          }
         </div>
       </div>
     </div>
   );
 }
+

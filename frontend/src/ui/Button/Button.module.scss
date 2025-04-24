@@ -1,3 +1,5 @@
+@use '../../styles/variables/colors' as *;
+
 .btn {
   font-size: 1rem;
   font-weight: 600;
@@ -50,5 +52,13 @@
     font-size: 1.5rem;
     padding-block: 0.8rem;
     padding-inline: 1.2rem;
+  }
+
+  &--active {
+    background-color: $primary-color;
+  }
+
+  &--disabled {
+    background-color: #adacac;
   }
 }
