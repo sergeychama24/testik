@@ -1,65 +1,43 @@
+import { useAppSelector } from "../../app/hooks.ts";
 import { CartItem } from "./cartItem/CartItem.tsx";
 import { Button } from "../../ui/Button/Button.tsx";
 import clsx from "clsx";
 
 import styles from "./Cart.module.scss";
 
-const cartItems = [
-  {
-    id: 122,
-    name: "Наруто: Ураганные хроники ультимативный ниндзя 10 Конекшен",
-    qty: 2,
-    price: 1500,
-    type: "tech",
-  },
-  {
-    id: 228,
-    name: "Чипы Lays",
-    qty: 1,
-    price: 132,
-    type: "food",
-  },
-  {
-    id: 322,
-    name: "iPhone 16 Pro Max Ultra Super Mega Alpha",
-    qty: 2,
-    price: 14999,
-    type: "tech",
-  },
-];
-
 type CartProps = {
   isOpen: boolean;
 };
 
 export function Cart({ isOpen }: CartProps) {
+  const cart = useAppSelector(state => state.cart)
+  console.log(cart)
+
+
   return (
     <div className={clsx(styles.cart, isOpen && styles.active)}>
       <span className={styles.heading}>Корзина</span>
-      <ul className={styles.itemsList}>
-        {cartItems.map((item) => (
-          <CartItem {...item} key={item.id} />
-        ))}
-      </ul>
-      <div className={styles.summary}>
+      {cart.totalItems ? (
+        <>
+          <ul className={styles.itemsList}>
+            {cart.items.map((item) => (
+              <CartItem {...item} key={item.id} />
+            ))}
+          </ul>
+          <div className={styles.summary}>
         <span>
-          Товаров в корзине:{" "}
-          {cartItems.reduce((total, item) => {
-            return total + item.qty;
-          }, 0)}
+          Товаров в корзине: {cart.totalItems}
         </span>
-        <span>
-          Итоговая сумма:{" "}
-          {cartItems.reduce((total, item) => {
-            const itemTotal = item.qty * item.price;
-            return total + itemTotal;
-          }, 0)}{" "}
-          руб.
+            <span>
+          Итоговая сумма: {cart.totalPrice}
+              руб.
         </span>
-      </div>
-      <Button type="secondary" size="large">
-        Оплатить
-      </Button>
+          </div>
+          <Button type="secondary" size="large">
+            Оплатить
+          </Button>
+        </>
+      ) : <p className={styles.empty}>Корзина пуста. Добавьте товары чтобы перейти к оплате</p>}
     </div>
   );
 }
