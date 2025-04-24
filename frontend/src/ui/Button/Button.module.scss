@@ -38,6 +38,11 @@
     outline: 1px solid #cecece;
   }
 
+  &--type-rounded {
+    border-radius: 60%;
+    border: solid 1px black;
+  }
+
   &--size-small {
     padding-block: 0.5rem;
     padding-inline: 1rem;

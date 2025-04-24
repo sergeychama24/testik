@@ -28,10 +28,27 @@ export const cartSlice = createSlice({
       }];
       state.totalPrice = state.items.reduce((total, item) => total + item.price * item.qty, 0);
       state.totalItems = state.items.reduce((total, item) => total + item.qty, 0);
+    },
+    removeFromCart: (state, action: PayloadAction<string>) => {
+      state.items = state.items.filter((item) => item.id !== action.payload);
+    },
+    increment: (state, action: PayloadAction<string>) => {
+      state.items = state.items.map(item =>
+        item.id === action.payload
+          ? { ...item, qty: item.qty + 1 }
+          : item
+      );
+    },
+    decrement: (state, action: PayloadAction<string>) => {
+      state.items = state.items.map(item =>
+        item.id === action.payload
+          ? { ...item, qty: item.qty - 1 }
+          : item
+      );
     }
   }
 })
 
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, increment, decrement } = cartSlice.actions;
 export const cartSelector = (state: RootState) => state.cart;
 export default cartSlice.reducer;

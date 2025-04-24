@@ -5,7 +5,7 @@ import styles from "./Button.module.scss";
 
 type ButtonProps = {
   children: ReactNode;
-  type?: "primary" | "secondary";
+  type?: "primary" | "secondary" | 'rounded';
   size?: "small" | "medium" | "large";
   isActive?: boolean;
   onClick?: () => void;

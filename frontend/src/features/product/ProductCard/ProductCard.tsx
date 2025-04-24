@@ -4,8 +4,9 @@ import styles from "./ProductCard.module.scss";
 import clsx from "clsx";
 import { Product } from "../../../types";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks.ts";
-import { addToCart } from "../../cart/cartSlice.ts";
+import { addToCart, decrement, increment, removeFromCart } from "../../cart/cartSlice.ts";
 import { checkHasInCart } from "../../../utils";
+import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 
 type ProductCardProps = Product;
 
@@ -23,6 +24,22 @@ export function ProductCard({
   function addToCartHandler(){
     dispatch(addToCart({
       name, id, qty, price, sale}))
+  }
+
+  function incrementItemHandler(){
+    if (cart.items.find(item => item.id === id)?.qty >= qty) {
+      return
+    } else {
+      dispatch(increment(id))
+    }
+  }
+
+  function decrementItemHandler(){
+    if (cart.items.find(item => item.id === id)?.qty === 1) {
+      dispatch(removeFromCart(id))
+    } else {
+      dispatch(decrement(id))
+    }
   }
 
   return (
@@ -47,9 +64,13 @@ export function ProductCard({
             <span className={styles.accent}>{qty}</span> шт.
           </span>
         </div>
-        <div>
+        <div className={styles.addButtons}>
           {checkHasInCart(cart.items, id)
-            ? (<Button>Уже в корзине</Button>)
+            ? (<>
+              <CiCircleMinus size='2.3rem' type='rounded' onClick={decrementItemHandler}/>
+              <span>{`${cart.items.find(item => item.id === id)?.qty} шт.`}</span>
+              <CiCirclePlus size='2.3rem' onClick={incrementItemHandler}/>
+            </>)
             : <Button onClick={addToCartHandler}>В корзину</Button>
           }
         </div>
