@@ -13,7 +13,11 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <nav className={styles.nav}>
-          <div className={styles.logo}>DARK STORE</div>
+          <div className={styles.logo}>
+          <NavLink to='/'>
+            DARK STORE
+          </NavLink>
+          </div>
           <ul className={styles.links}>
             <li>
               <NavLink

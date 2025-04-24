@@ -8,9 +8,9 @@ function App() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Navigate to="/food" replace />} />
-          <Route path="food" element={<Products type={"food"} />} />
-          <Route path="tech" element={<Products type={"tech"} />} />
-          <Route path="clothes" element={<Products type={"clothes"} />} />
+          <Route path="food" element={<Products type={"food"} key='food'/>} />
+          <Route path="tech" element={<Products type={"tech"} key='tech'/>} />
+          <Route path="clothes" element={<Products type={"clothes"} key='clothes'/>} />
         </Route>
       </Routes>
     </BrowserRouter>
