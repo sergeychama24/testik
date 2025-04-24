@@ -29,8 +29,10 @@ export const cartSlice = createSlice({
       state.totalPrice = state.items.reduce((total, item) => total + item.price * item.qty, 0);
       state.totalItems = state.items.reduce((total, item) => total + item.qty, 0);
     },
-    removeFromCart: (state, action: PayloadAction<string>) => {
-      state.items = state.items.filter((item) => item.id !== action.payload);
+    removeFromCart: (state, action: PayloadAction<Pick<ProductInCart, 'id' | 'price'>>) => {
+      state.items = state.items.filter((item) => item.id !== action.payload.id);
+      state.totalPrice = state.totalPrice - action.payload.price;
+      state.totalItems = state.totalItems - 1;
     },
     increment: (state, action: PayloadAction<string>) => {
       state.items = state.items.map(item =>
@@ -38,6 +40,8 @@ export const cartSlice = createSlice({
           ? { ...item, qty: item.qty + 1 }
           : item
       );
+      state.totalPrice = state.items.reduce((total, item) => total + item.price * item.qty, 0);
+      state.totalItems = state.items.reduce((total, item) => total + item.qty, 0);
     },
     decrement: (state, action: PayloadAction<string>) => {
       state.items = state.items.map(item =>
@@ -45,6 +49,8 @@ export const cartSlice = createSlice({
           ? { ...item, qty: item.qty - 1 }
           : item
       );
+      state.totalPrice = state.items.reduce((total, item) => total - item.price, state.totalPrice);
+      state.totalItems = state.items.reduce((total, item) => total - 1, state.totalItems);
     }
   }
 })

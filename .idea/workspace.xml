@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="feat: add pagination">
+    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="feat: add increment and decrement from cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/ui/Button/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/ui/Button/Button.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/ui/Button/Button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,7 @@
       <workItem from="1745458853078" duration="2701000" />
       <workItem from="1745504574736" duration="4403000" />
       <workItem from="1745511379849" duration="3200000" />
-      <workItem from="1745518983349" duration="11965000" />
+      <workItem from="1745518983349" duration="13709000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -362,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745527814389</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: add increment and decrement from cart">
+      <option name="closed" value="true" />
+      <created>1745532855607</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1745532855607</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +397,7 @@
     <MESSAGE value="fix: remove mock data from cart and fix styles" />
     <MESSAGE value="feat: add api service" />
     <MESSAGE value="feat: add pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add pagination" />
+    <MESSAGE value="feat: add increment and decrement from cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add increment and decrement from cart" />
   </component>
 </project>

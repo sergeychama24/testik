@@ -36,7 +36,7 @@ export function ProductCard({
 
   function decrementItemHandler(){
     if (cart.items.find(item => item.id === id)?.qty === 1) {
-      dispatch(removeFromCart(id))
+      dispatch(removeFromCart({id, price}))
     } else {
       dispatch(decrement(id))
     }
