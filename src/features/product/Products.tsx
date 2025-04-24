@@ -4,17 +4,20 @@ import styles from "./Products.module.scss";
 
 import { ProductCard } from "./ProductCard/ProductCard.tsx";
 import { Button } from "../../ui/Button/Button.tsx";
+import { formatProductType } from "../../utils";
 
-type ProductsProps = {};
+type ProductsProps = {
+  type: "tech" | "clothes" | "food";
+};
 
-export function Products({}: ProductsProps) {
+export function Products({ type }: ProductsProps) {
   // TODO: Remove after
   const pages = 5;
 
   return (
     <>
       {/*TODO: Add qty items*/}
-      <h2>Электроника (10)</h2>
+      <h2>{`${formatProductType(type)} 10`}</h2>
       <div className={styles.products}>
         {/*TODO: Replace on real id*/}
         {mockProducts.map((product, id) => (
