@@ -47,6 +47,7 @@ export const mockProducts: Product[] = [
     name: "Gran Turismo 7",
     image: "https://img.mvideo.ru/Big/40077081bb.jpg",
     qty: 2,
+    sale: 4499,
     price: 6499,
     type: "tech",
   },
