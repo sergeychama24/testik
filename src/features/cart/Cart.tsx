@@ -57,7 +57,9 @@ export function Cart({ isOpen }: CartProps) {
           руб.
         </span>
       </div>
-      <Button>Оплатить</Button>
+      <Button type="secondary" size="large">
+        Оплатить
+      </Button>
     </div>
   );
 }
