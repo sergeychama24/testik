@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="feat: setup redux store">
+    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: remove mock data from cart and fix styles">
+      <change afterPath="$PROJECT_DIR$/frontend/src/features/product/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/products.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/Cart.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/Cart.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/Products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +142,7 @@
       <workItem from="1745458853078" duration="2701000" />
       <workItem from="1745504574736" duration="4403000" />
       <workItem from="1745511379849" duration="3200000" />
-      <workItem from="1745518983349" duration="1311000" />
+      <workItem from="1745518983349" duration="3472000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -335,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745519754145</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fix: remove mock data from cart and fix styles">
+      <option name="closed" value="true" />
+      <created>1745520437286</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1745520437286</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +372,7 @@
     <MESSAGE value="fix: fix ProductCard styles" />
     <MESSAGE value="feat: add docker and json server" />
     <MESSAGE value="feat: setup redux store" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: setup redux store" />
+    <MESSAGE value="fix: remove mock data from cart and fix styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove mock data from cart and fix styles" />
   </component>
 </project>

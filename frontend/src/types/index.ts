@@ -1,4 +1,4 @@
-type ProductType = "food" | "tech" | "clothes";
+export type ProductType = "food" | "tech" | "clothes";
 
 export type Product = {
   id: string;
@@ -11,3 +11,12 @@ export type Product = {
 };
 
 export type ProductInCart = Omit<Product, 'image' | 'type'>
+
+export type ProductResponse = {
+  data: Product[],
+  first: number,
+  items: number;
+  last: number;
+  next: number;
+  pages: 10;
+}
