@@ -23,12 +23,12 @@ export function ProductCard({
         <div className={styles.numbers}>
           {sale ? (
             <span>
-              Цена: <span className={styles.accent}>{sale}</span>{" "}
+              <span className={styles.accent}>{sale}</span> руб.{" "}
               <span className={clsx(styles.accent, styles.sale)}>{price}</span>
             </span>
           ) : (
             <span>
-              Цена: <span className={styles.accent}>{price}</span>
+              <span className={styles.accent}>{price}</span> руб.
             </span>
           )}
           <span>
