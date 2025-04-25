@@ -4,7 +4,13 @@ import styles from "./ProductCard.module.scss";
 
 import clsx from "clsx";
 import { Product } from "../../../types";
-import { addToCart, cartSelector, decrement, increment, removeFromCart } from "../../cart/cartSlice.ts";
+import {
+  addToCart,
+  cartSelector,
+  decrement,
+  increment,
+  removeFromCart,
+} from "../../cart/cartSlice.ts";
 import { checkHasInCart } from "../../../utils";
 import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 
@@ -16,29 +22,43 @@ export function ProductCard({
   image,
   price,
   sale,
-  id
+  id,
 }: ProductCardProps) {
-  const cart = useAppSelector(cartSelector)
-  const dispatch = useAppDispatch()
+  const cart = useAppSelector(cartSelector);
+  const dispatch = useAppDispatch();
 
-  function addToCartHandler(){
-    dispatch(addToCart({
-      name, id, qty, price, sale}))
+  function addToCartHandler() {
+    dispatch(
+      addToCart({
+        name,
+        id,
+        qty,
+        price,
+        sale,
+      }),
+    );
   }
 
-  function incrementItemHandler(){
-    if (cart.items.find(item => item.id === id)?.qty >= qty) {
-      return
-    } else {
-      dispatch(increment(id))
+  function incrementItemHandler() {
+    const incrementedItem = cart.items.find((item) => item.id === id);
+
+    if (incrementedItem) {
+      if (incrementedItem.qty >= qty) {
+        return;
+      } else {
+        dispatch(increment(id));
+      }
     }
   }
 
-  function decrementItemHandler(){
-    if (cart.items.find(item => item.id === id)?.qty <= 1) {
-      dispatch(removeFromCart({id, price}))
-    } else {
-      dispatch(decrement(id))
+  function decrementItemHandler() {
+    const decrementItem = cart.items.find((item) => item.id === id);
+    if (decrementItem) {
+      if (decrementItem.qty <= 1) {
+        dispatch(removeFromCart({ id, price }));
+      } else {
+        dispatch(decrement(id));
+      }
     }
   }
 
@@ -65,17 +85,21 @@ export function ProductCard({
           </span>
         </div>
         <div className={styles.addButtons}>
-          {checkHasInCart(cart.items, id)
-            ? (<>
-              <CiCircleMinus size='2.3rem' type='rounded' onClick={decrementItemHandler}/>
-              <span>{`${cart.items.find(item => item.id === id)?.qty} шт.`}</span>
-              <CiCirclePlus size='2.3rem' onClick={incrementItemHandler}/>
-            </>)
-            : <Button onClick={addToCartHandler}>В корзину</Button>
-          }
+          {checkHasInCart(cart.items, id) ? (
+            <>
+              <CiCircleMinus
+                size="2.3rem"
+                type="rounded"
+                onClick={decrementItemHandler}
+              />
+              <span>{`${cart.items.find((item) => item.id === id)?.qty} шт.`}</span>
+              <CiCirclePlus size="2.3rem" onClick={incrementItemHandler} />
+            </>
+          ) : (
+            <Button onClick={addToCartHandler}>В корзину</Button>
+          )}
         </div>
       </div>
     </div>
   );
 }
-
