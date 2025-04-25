@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: rename CartItem directory" />
+    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: remove footer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +142,7 @@
       <workItem from="1745504574736" duration="4403000" />
       <workItem from="1745511379849" duration="3200000" />
       <workItem from="1745518983349" duration="15794000" />
-      <workItem from="1745595416807" duration="3179000" />
+      <workItem from="1745595416807" duration="3973000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -403,14 +408,21 @@
       <option name="project" value="LOCAL" />
       <updated>1745598517103</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix: remove footer">
+      <option name="closed" value="true" />
+      <created>1745598673939</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1745598673939</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add scss" />
     <MESSAGE value="feat: add Header and Cart component" />
     <MESSAGE value="feat: add Button component" />
     <MESSAGE value="feat: add mock data" />
@@ -435,6 +447,7 @@
     <MESSAGE value="fix: fix ProductCard handlers" />
     <MESSAGE value="fix: remove useless import and format code" />
     <MESSAGE value="fix: rename CartItem directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: rename CartItem directory" />
+    <MESSAGE value="fix: remove footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove footer" />
   </component>
 </project>

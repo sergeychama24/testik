@@ -25,10 +25,14 @@ export const cartSlice = createSlice({
       state.items.push({ ...action.payload, qty: 1 });
       state.totalPrice += action.payload.price;
       state.totalItems += 1;
+
+      if (action.payload.sale) {
+        state.discount += action.payload.price - action.payload.sale;
+      }
     },
     removeFromCart: (
       state,
-      action: PayloadAction<Pick<ProductInCart, "id" | "price">>,
+      action: PayloadAction<Pick<ProductInCart, "id" | "price" | "sale">>,
     ) => {
       const removedItem = state.items.find(
         (item) => item.id === action.payload.id,
@@ -36,6 +40,9 @@ export const cartSlice = createSlice({
       if (removedItem) {
         state.totalPrice -= removedItem.price * removedItem.qty;
         state.totalItems -= removedItem.qty;
+        if (action.payload.sale) {
+          state.discount -= action.payload.price - action.payload.sale;
+        }
       }
       state.items = state.items.filter((item) => item.id !== action.payload.id);
     },
@@ -45,6 +52,9 @@ export const cartSlice = createSlice({
         item.qty += 1;
         state.totalPrice += item.price;
         state.totalItems += 1;
+        if (item.sale) {
+          state.discount += item.price - item.sale;
+        }
       }
     },
     decrement: (state, action: PayloadAction<string>) => {
@@ -53,6 +63,9 @@ export const cartSlice = createSlice({
         item.qty -= 1;
         state.totalPrice -= item.price;
         state.totalItems -= 1;
+        if (item.sale) {
+          state.discount -= item.price - item.sale;
+        }
       }
     },
   },

@@ -55,7 +55,7 @@ export function ProductCard({
     const decrementItem = cart.items.find((item) => item.id === id);
     if (decrementItem) {
       if (decrementItem.qty <= 1) {
-        dispatch(removeFromCart({ id, price }));
+        dispatch(removeFromCart({ id, price, sale }));
       } else {
         dispatch(decrement(id));
       }

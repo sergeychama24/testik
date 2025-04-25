@@ -25,6 +25,7 @@ export function Cart({ isOpen }: CartProps) {
           </ul>
           <div className={styles.summary}>
             <span>Товаров в корзине: {cart.totalItems}</span>
+            <span>Ваша скидка: {cart.discount}</span>
             <span>
               Итоговая сумма: {cart.totalPrice}
               руб.
