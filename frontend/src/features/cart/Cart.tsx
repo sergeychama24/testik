@@ -1,3 +1,4 @@
+import { RefObject } from "react";
 import { useAppSelector } from "../../app/hooks.ts";
 import { CartItem } from "./CartItem/CartItem.tsx";
 import { Button } from "../../ui/Button/Button.tsx";
@@ -7,14 +8,14 @@ import styles from "./Cart.module.scss";
 
 type CartProps = {
   isOpen: boolean;
+  ref: RefObject<HTMLDivElement> | null;
 };
 
-export function Cart({ isOpen }: CartProps) {
+export function Cart({ isOpen, ref }: CartProps) {
   const cart = useAppSelector((state) => state.cart);
-  console.log(cart);
 
   return (
-    <div className={clsx(styles.cart, isOpen && styles.active)}>
+    <div ref={ref} className={clsx(styles.cart, isOpen && styles.active)}>
       <span className={styles.heading}>Корзина</span>
       {cart.totalItems ? (
         <>
