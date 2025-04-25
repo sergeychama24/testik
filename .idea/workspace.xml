@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: remove footer">
+    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="feat: add sorting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/cartSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductCard/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/productsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/productsApi.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       <workItem from="1745504574736" duration="4403000" />
       <workItem from="1745511379849" duration="3200000" />
       <workItem from="1745518983349" duration="15794000" />
-      <workItem from="1745595416807" duration="3973000" />
+      <workItem from="1745595416807" duration="6143000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -416,15 +417,21 @@
       <option name="project" value="LOCAL" />
       <updated>1745598673939</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat: add discount functional">
+      <option name="closed" value="true" />
+      <created>1745599465589</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1745599465589</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add Header and Cart component" />
-    <MESSAGE value="feat: add Button component" />
     <MESSAGE value="feat: add mock data" />
     <MESSAGE value="feat: add types" />
     <MESSAGE value="feat: create utils index" />
@@ -448,6 +455,8 @@
     <MESSAGE value="fix: remove useless import and format code" />
     <MESSAGE value="fix: rename CartItem directory" />
     <MESSAGE value="fix: remove footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove footer" />
+    <MESSAGE value="feat: add discount functional" />
+    <MESSAGE value="feat: add sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add sorting" />
   </component>
 </project>

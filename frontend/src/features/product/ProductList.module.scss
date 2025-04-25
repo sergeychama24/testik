@@ -1,5 +1,25 @@
+@use '../../styles/variables/colors' as *;
+
 .products {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
+}
+
+.sort {
+  display: flex;
+  gap: 1rem;
+}
+
+.sortItem {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: $primary-color;
+    text-decoration: underline;
+  }
 }
