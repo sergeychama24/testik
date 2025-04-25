@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useGetAllProducts } from "./hooks.ts";
 import { ProductCard } from "./ProductCard/ProductCard.tsx";
 import { formatProductType } from "../../utils";
@@ -13,7 +13,7 @@ type ProductsProps = {
 
 export function ProductList({ type }: ProductsProps) {
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const { result, isLoading, error } = useGetAllProducts(type, currentPage)
+  const { result, isLoading, error } = useGetAllProducts(type, currentPage);
 
   function handleNextPage() {
     setCurrentPage(currentPage + 1);
@@ -26,9 +26,9 @@ export function ProductList({ type }: ProductsProps) {
     setCurrentPage(page);
   }
 
-  if (error) return <h1>Что-то пошло не так...</h1>
+  if (error) return <h1>Что-то пошло не так...</h1>;
 
-  if (isLoading) return <h1>Загружаем каталог...</h1>
+  if (isLoading) return <h1>Загружаем каталог...</h1>;
 
   if (result) {
     return (
@@ -42,11 +42,20 @@ export function ProductList({ type }: ProductsProps) {
           ))}
         </div>
         {result.pages ? (
-          <Pagination maxPage={result.last} minPage={result.first} currentPage={currentPage} onNextPage={handleNextPage} onPrevPage={handlePrevPage} onPageChange={handleChangePage}/>
-        ) : <h2>К сожалению все товары закончились:(</h2>}
+          <Pagination
+            maxPage={result.last}
+            minPage={result.first}
+            currentPage={currentPage}
+            onNextPage={handleNextPage}
+            onPrevPage={handlePrevPage}
+            onPageChange={handleChangePage}
+          />
+        ) : (
+          <h2>К сожалению все товары закончились:(</h2>
+        )}
       </>
-    )
+    );
   }
 
-  return null
+  return null;
 }
