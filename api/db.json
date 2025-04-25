@@ -1,0 +1,385 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "The Last of Us Part 1",
+      "image": "https://img.mvideo.ru/Big/40078996bb.jpg",
+      "qty": 10,
+      "price": 4999,
+      "type": "tech"
+    },
+    {
+      "id": 2,
+      "name": "Ratchet & Clank: Сквозь Миры",
+      "image": "https://img.mvideo.ru/Big/40075247bb.jpg",
+      "qty": 10,
+      "price": 4499,
+      "type": "tech"
+    },
+    {
+      "id": 3,
+      "name": "Horizon Запретный Запад",
+      "image": "https://img.mvideo.ru/Big/40076798bb.jpg",
+      "qty": 3,
+      "price": 4999,
+      "sale": 3499,
+      "type": "tech"
+    },
+    {
+      "id": 4,
+      "name": "God of War: Ragnarok",
+      "image": "https://img.mvideo.ru/Big/40079008bb.jpg",
+      "qty": 5,
+      "price": 5299,
+      "type": "tech"
+    },
+    {
+      "id": 1395,
+      "name": "Horizon Zero Dawn Remastered",
+      "image": "https://img.mvideo.ru/Big/400384401bb.jpg",
+      "qty": 10,
+      "price": 7999,
+      "type": "tech"
+    },
+    {
+      "id": 5463,
+      "name": "Gran Turismo7",
+      "image": "https://img.mvideo.ru/Big/40077081bb.jpg",
+      "qty": 2,
+      "sale": 4499,
+      "price": 6499,
+      "type": "tech"
+    },
+    {
+      "id": 39249234,
+      "name": "Консоль Sony Playstation5 Pro",
+      "image": "https://img.mvideo.ru/Big/40079746bb.jpg",
+      "qty": 29,
+      "price": 99999,
+      "type": "tech"
+    },
+    {
+      "id": 6311,
+      "name": "Death Stranding Director's Cut",
+      "image": "https://img.mvideo.ru/Big/40076387bb.jpg",
+      "qty": 12,
+      "price": 2790,
+      "type": "tech"
+    },
+    {
+      "id": 93623,
+      "name": "Demon's Souls",
+      "image": "https://img.mvideo.ru/Big/40074576bb.jpg",
+      "qty": 1,
+      "price": 4199,
+      "type": "tech"
+    },
+    {
+      "id": 15765,
+      "name": "Сэкбой: Большое приключение",
+      "image": "https://img.mvideo.ru/Big/40074580bb.jpg",
+      "qty": 7,
+      "price": 3999,
+      "type": "tech"
+    },
+    {
+      "id": 151265,
+      "name": "EA Sports UFC 5",
+      "image": "https://img.mvideo.ru/Big/400220478bb.jpg",
+      "qty": 9,
+      "price": 4999,
+      "type": "tech"
+    },
+    {
+      "id": 17812,
+      "name": "Ведьмак 3: Дикая Охота. Издание «Игра года»",
+      "image": "https://img.mvideo.ru/Pdb/40065146b.jpg",
+      "qty": 12,
+      "price": 3299,
+      "sale": 2399,
+      "type": "tech"
+    },
+    {
+      "id": 732842,
+      "name": "Mortal Kombat 11",
+      "image": "https://img.mvideo.ru/Big/40070815bb.jpg",
+      "qty": 5,
+      "price": 2499,
+      "type": "tech"
+    },
+    {
+      "id": 78211,
+      "name": "Resident Evil 4 Remake ",
+      "image": "https://img.mvideo.ru/Pdb/400083931b.jpg",
+      "qty": 5,
+      "price": 2999,
+      "type": "tech"
+    },
+    {
+      "id": 645212,
+      "name": "Nintendo Switch OLED синий/красный",
+      "image": "https://img.mvideo.ru/Big/40079572bb.jpg",
+      "qty": 50,
+      "price": 32999,
+      "type": "tech"
+    },
+    {
+      "id": 212,
+      "name": "Mario Kart 8 Deluxe",
+      "image": "https://img.mvideo.ru/Pdb/40065934b.jpg",
+      "qty": 12,
+      "price": 6499,
+      "type": "tech"
+    },
+    {
+      "id": 891234,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "image": "https://img.mvideo.ru/Big/40065744bb.jpg",
+      "qty": 6,
+      "sale": 5999,
+      "price": 6799,
+      "type": "tech"
+    },
+    {
+      "id": 124234,
+      "name": "Super Smash Bros. Ultimate",
+      "image": "https://img.mvideo.ru/Big/40070590bb.jpg",
+      "qty": 10,
+      "price": 5999,
+      "type": "tech"
+    },
+    {
+      "id": 88321,
+      "name": "New Super Mario Bros U Deluxe",
+      "image": "https://img.mvideo.ru/Big/40070863bb.jpg",
+      "qty": 20,
+      "price": 5999,
+      "type": "tech"
+    },
+    {
+      "id": 88321,
+      "name": "Super Mario Odyssey",
+      "image": "https://img.mvideo.ru/Pdb/40066697b.jpg",
+      "qty": 7,
+      "price": 5999,
+      "type": "tech"
+    },
+    {
+      "id": 348321,
+      "name": "Animal Crossing: New Horizons",
+      "image": "https://img.mvideo.ru/Big/40072895bb.jpg",
+      "qty": 6,
+      "price": 6499,
+      "type": "tech"
+    },
+    {
+      "id": 9459123,
+      "name": "Красная фасоль Bonduelle, по-мексикански, с кукурузой, в соусе буррито",
+      "image": "https://cm.samokat.ru/processed/l/product_card/046e7f0b-e668-4936-92de-48013bb3a157.jpg",
+      "qty": 15,
+      "sale": 159,
+      "price": 220,
+      "type": "food"
+    },
+    {
+      "id": 73129235,
+      "name": "Эчпочмак Самокат, с курицей и картофелем",
+      "image": "https://cm.samokat.ru/processed/l/product_card/aafa20ca-a9b7-4976-a69e-b1af335d30c3.jpg",
+      "qty": 7,
+      "price": 109,
+      "type": "food"
+    },
+    {
+      "id": 7290035,
+      "name": "Кола Evervess, Vanilla Ice, без сахара, с газом",
+      "image": "https://cm.samokat.ru/processed/l/product_card/c8aa58f5-c112-4407-96dc-202f2502c8af.jpeg",
+      "qty": 20,
+      "price": 109,
+      "type": "food"
+    },
+    {
+      "id": 93294210,
+      "name": "Кукурузные снеки Cheetos, сладкий тай чили",
+      "image": "https://cm.samokat.ru/processed/l/product_card/ee64ed93-c5a5-40bd-8f67-904e5691efec.jpg",
+      "qty": 40,
+      "price": 99,
+      "type": "food"
+    },
+    {
+      "id": 661234,
+      "name": "Растворимый кофейный напиток Monarch, Cherry, 4 в 1",
+      "image": "https://cm.samokat.ru/processed/l/product_card/d21093f2-4236-4ff3-b966-dba557ada324.jpg",
+      "qty": 50,
+      "sale": 25,
+      "price": 35,
+      "type": "food"
+    },
+    {
+      "id": 96234901,
+      "name": "Печенье Oreo, апельсин",
+      "image": "https://cm.samokat.ru/processed/l/product_card/7eb2ce13-6722-49e1-9da6-f716db959115.jpeg",
+      "qty": 10,
+      "sale": 99,
+      "price": 139,
+      "type": "food"
+    },
+    {
+      "id": 3388234,
+      "name": "Шоколадный батончик Nuts, Космический, с фундуком и арахисом, пекан",
+      "image": "https://cm.samokat.ru/processed/l/product_card/2c3f8696-0e20-4d09-a0fd-0e93cb9f928b.jpg",
+      "qty": 20,
+      "sale": 99,
+      "price": 186,
+      "type": "food"
+    },
+    {
+      "id": 77438,
+      "name": "Творожный сырок А. Ростагрокомплекс, 24%, груша и горгонзола, глазированный",
+      "image": "https://cm.samokat.ru/processed/l/product_card/a9e2c341-3b18-4bfc-8dd6-eaa18017d5b1.jpg",
+      "qty": 50,
+      "sale": 89,
+      "price": 99,
+      "type": "food"
+    },
+    {
+      "id": 12233321,
+      "name": "Рисовые хлебцы Dr. Körner, пармезан и песто",
+      "image": "https://cm.samokat.ru/processed/l/product_card/9c63a999-1de8-47f1-950a-5ce3ee1ee840.jpg",
+      "qty": 1,
+      "price": 110,
+      "type": "food"
+    },
+    {
+      "id": 59456,
+      "name": "Протеиновые чипсы Самокат, лобстер на гриле",
+      "image": "https://cm.samokat.ru/processed/l/product_card/72c7a4b6-c2d8-4c5c-b00b-d0f81470fa1c.jpg",
+      "qty": 10,
+      "price": 135,
+      "type": "food"
+    },
+    {
+      "id": 19999213,
+      "name": "Печенье Snaq Fabriq, без сахара, 18% протеина, фисташка и карамель",
+      "image": "https://cm.samokat.ru/processed/l/product_card/fffa50b6-d7a9-476c-bb07-03b110ab140e.jpg",
+      "qty": 5,
+      "price": 198,
+      "sale": 178,
+      "type": "food"
+    },
+    {
+      "id": 8888823423,
+      "name": "Дымляма Самокат, с говядиной",
+      "image": "https://cm.samokat.ru/processed/l/product_card/27ffc818-60fd-482e-993d-ea492c2ff307.jpg",
+      "qty": 9,
+      "price": 329,
+      "type": "food"
+    },
+    {
+      "id": 854564,
+      "name": "Мороженое Магнат Double, солёная карамель, с кусочками настоящего шоколада, в ведёрке",
+      "image": "https://cm.samokat.ru/processed/l/product_card/f7695131-dd39-42c6-9547-aac971e69952.jpg",
+      "qty": 25,
+      "price": 695,
+      "sale": 479,
+      "type": "food"
+    },
+    {
+      "id": 88435,
+      "name": "Шоколад Kinder Maxi, с молочной начинкой",
+      "image": "https://cm.samokat.ru/processed/l/product_card/69509724-7f90-4e43-a6b2-53f39618900e.jpg",
+      "qty": 4,
+      "price": 229,
+      "type": "food"
+    },
+    {
+      "id": 4439123,
+      "name": "Бисквитное пирожное Kinder Delice",
+      "image": "https://cm.samokat.ru/processed/l/product_card/c9088a23-ab49-4062-aa48-ed5b4e90b1ce.jpg",
+      "qty": 25,
+      "price": 105,
+      "type": "food"
+    },
+    {
+      "id": 446231,
+      "name": "Энергетик Adrenaline Rush",
+      "image": "https://cm.samokat.ru/processed/l/product_card/a0a3c7f0-31b1-445a-badf-d82d357d641e.jfif",
+      "qty": 100,
+      "price": 129,
+      "type": "food"
+    },
+    {
+      "id": 9123321,
+      "name": "Датский хот-дог Самокат",
+      "image": "https://cm.samokat.ru/processed/l/product_card/a3e7e876-3b76-4fc6-b410-e9e4e0c6eea8.jpg",
+      "qty": 3,
+      "price": 229,
+      "type": "food"
+    },
+    {
+      "id": 54443,
+      "name": "Холодный зелёный чай Lipton, манго",
+      "image": "https://cm.samokat.ru/processed/l/product_card/d9011959-221a-428f-ad3a-5283f3eb6b31.jpg",
+      "qty": 13,
+      "price": 169,
+      "type": "food"
+    },
+    {
+      "id": 8854621312,
+      "name": "Лапша Nongshim, Шин Рамен, быстрого приготовления",
+      "image": "https://cm.samokat.ru/processed/l/product_card/e4904e53-f5dc-475f-b475-e97c901e023f.jpg",
+      "qty": 13,
+      "price": 169,
+      "type": "food"
+    },
+    {
+      "id": 8821321564,
+      "name": "Снеки Crackzel Pretzel Pieces, горячие крылышки баффало",
+      "image": "https://cm.samokat.ru/processed/l/product_card/0a6bfa20-02e8-4bf3-b424-b43105364953.jpg",
+      "qty": 70,
+      "price": 95,
+      "type": "food"
+    },
+    {
+      "id": 123221564,
+      "name": "Мороженое Maxiduo, в вафельном рожке",
+      "image": "https://cm.samokat.ru/processed/l/product_card/d0b18d93-4ee2-4267-8c7a-174efacc7594.jpg",
+      "qty": 1,
+      "sale": 100,
+      "price": 130,
+      "type": "food"
+    },
+    {
+      "id": 774435112,
+      "name": "Напиток Frustyle, Огненное манго, с газом",
+      "image": "https://cm.samokat.ru/processed/l/product_card/627f221a-f07d-40e9-8de4-92edb1f3dbaf.jpg",
+      "qty": 32,
+      "sale": 119,
+      "price": 145,
+      "type": "food"
+    },
+    {
+      "id": 9911123,
+      "name": "Чипсы Lay’s Из печи, мусс из лосося и авокадо",
+      "image": "https://cm.samokat.ru/processed/l/product_card/5dd3e41a-f6c8-4291-b731-921854fc3e7e.jpg",
+      "qty": 10,
+      "price": 145,
+      "type": "food"
+    },
+    {
+      "id": 9911123,
+      "name": "Рисовые токпокки Joayo Cheese, с сырным соусом",
+      "image": "https://cm.samokat.ru/processed/l/product_card/b8393ffb-744b-44f8-a762-d73fec2b51c0.jpg",
+      "qty": 12,
+      "price": 289,
+      "type": "food"
+    },
+    {
+      "id": 33432,
+      "name": "Баббл-ти Самокат, с лесными ягодами и шариками с соком черники",
+      "image": "https://cm.samokat.ru/processed/l/product_card/da754c89-cf14-406c-b05c-fbf5c9c69145.jpg",
+      "qty": 2,
+      "price": 215,
+      "type": "food"
+    }
+  ]
+}
