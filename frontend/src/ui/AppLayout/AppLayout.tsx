@@ -12,7 +12,6 @@ export function AppLayout() {
       <main className={styles.main}>
         <Outlet />
       </main>
-      <footer>FOOTER</footer>
     </>
   );
 }

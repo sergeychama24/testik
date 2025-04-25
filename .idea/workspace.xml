@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: remove useless import and format code">
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartItem/CartItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/CartItem/CartItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/CartItem/CartItem.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: rename CartItem directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +137,7 @@
       <workItem from="1745504574736" duration="4403000" />
       <workItem from="1745511379849" duration="3200000" />
       <workItem from="1745518983349" duration="15794000" />
-      <workItem from="1745595416807" duration="3034000" />
+      <workItem from="1745595416807" duration="3179000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -399,14 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1745598017076</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fix: rename CartItem directory">
+      <option name="closed" value="true" />
+      <created>1745598517103</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1745598517103</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: add clsx depens" />
     <MESSAGE value="feat: add scss" />
     <MESSAGE value="feat: add Header and Cart component" />
     <MESSAGE value="feat: add Button component" />
@@ -431,6 +434,7 @@
     <MESSAGE value="fix: fix increment and decrement logic in cart reducer" />
     <MESSAGE value="fix: fix ProductCard handlers" />
     <MESSAGE value="fix: remove useless import and format code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove useless import and format code" />
+    <MESSAGE value="fix: rename CartItem directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: rename CartItem directory" />
   </component>
 </project>
