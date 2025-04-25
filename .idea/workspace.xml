@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: fix ProductCard handlers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductList.tsx" afterDir="false" />
+    <list default="true" id="6488d903-fb94-4309-8f44-b96697535391" name="Changes" comment="fix: remove useless import and format code">
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/Cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartItem/CartItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/CartItem/CartItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/cart/cartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/cart/CartItem/CartItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +141,7 @@
       <workItem from="1745504574736" duration="4403000" />
       <workItem from="1745511379849" duration="3200000" />
       <workItem from="1745518983349" duration="15794000" />
-      <workItem from="1745595416807" duration="2507000" />
+      <workItem from="1745595416807" duration="3034000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -390,14 +391,21 @@
       <option name="project" value="LOCAL" />
       <updated>1745597885811</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix: remove useless import and format code">
+      <option name="closed" value="true" />
+      <created>1745598017076</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1745598017076</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: link fonts" />
     <MESSAGE value="chore: add clsx depens" />
     <MESSAGE value="feat: add scss" />
     <MESSAGE value="feat: add Header and Cart component" />
@@ -422,6 +430,7 @@
     <MESSAGE value="feat: add increment and decrement from cart" />
     <MESSAGE value="fix: fix increment and decrement logic in cart reducer" />
     <MESSAGE value="fix: fix ProductCard handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix ProductCard handlers" />
+    <MESSAGE value="fix: remove useless import and format code" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove useless import and format code" />
   </component>
 </project>

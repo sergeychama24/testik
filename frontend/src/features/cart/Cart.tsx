@@ -1,5 +1,5 @@
 import { useAppSelector } from "../../app/hooks.ts";
-import { CartItem } from "./cartItem/CartItem.tsx";
+import { CartItem } from "./CartItem/CartItem.tsx";
 import { Button } from "../../ui/Button/Button.tsx";
 import clsx from "clsx";
 
@@ -10,9 +10,8 @@ type CartProps = {
 };
 
 export function Cart({ isOpen }: CartProps) {
-  const cart = useAppSelector(state => state.cart)
-  console.log(cart)
-
+  const cart = useAppSelector((state) => state.cart);
+  console.log(cart);
 
   return (
     <div className={clsx(styles.cart, isOpen && styles.active)}>
@@ -25,19 +24,21 @@ export function Cart({ isOpen }: CartProps) {
             ))}
           </ul>
           <div className={styles.summary}>
-        <span>
-          Товаров в корзине: {cart.totalItems}
-        </span>
+            <span>Товаров в корзине: {cart.totalItems}</span>
             <span>
-          Итоговая сумма: {cart.totalPrice}
+              Итоговая сумма: {cart.totalPrice}
               руб.
-        </span>
+            </span>
           </div>
           <Button type="secondary" size="large">
             Оплатить
           </Button>
         </>
-      ) : <p className={styles.empty}>Корзина пуста. Добавьте товары чтобы перейти к оплате</p>}
+      ) : (
+        <p className={styles.empty}>
+          Корзина пуста. Добавьте товары чтобы перейти к оплате
+        </p>
+      )}
     </div>
   );
 }
