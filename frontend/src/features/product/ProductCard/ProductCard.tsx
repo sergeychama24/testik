@@ -1,10 +1,10 @@
+import { useAppDispatch, useAppSelector } from "../../../app/hooks.ts";
 import { Button } from "../../../ui/Button/Button.tsx";
 import styles from "./ProductCard.module.scss";
 
 import clsx from "clsx";
 import { Product } from "../../../types";
-import { useAppDispatch, useAppSelector } from "../../../app/hooks.ts";
-import { addToCart, decrement, increment, removeFromCart } from "../../cart/cartSlice.ts";
+import { addToCart, cartSelector, decrement, increment, removeFromCart } from "../../cart/cartSlice.ts";
 import { checkHasInCart } from "../../../utils";
 import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 
@@ -18,7 +18,7 @@ export function ProductCard({
   sale,
   id
 }: ProductCardProps) {
-  const cart = useAppSelector(state => state.cart)
+  const cart = useAppSelector(cartSelector)
   const dispatch = useAppDispatch()
 
   function addToCartHandler(){
@@ -35,7 +35,7 @@ export function ProductCard({
   }
 
   function decrementItemHandler(){
-    if (cart.items.find(item => item.id === id)?.qty === 1) {
+    if (cart.items.find(item => item.id === id)?.qty <= 1) {
       dispatch(removeFromCart({id, price}))
     } else {
       dispatch(decrement(id))
